@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+
+
+    input {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+
+    #mon-bouton {
+      width: 55px;
+      height: 20px;
+      margin-top: 10px;
+      background-color: lightpink;
+      
+    }
+
+    #somme {
+      width: 100px;
+      height: 100px;
+
+      background-color: aquamarine;
+
+      font-size: 30px;
+      font-weight: bold;
+
+      border-radius: 5px;
+      border: 2px solid violet;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+  <h1>Calculatrice</h1>
+
+  <form action="" id="calcul">
+    <label for="">Nombre 1</label>
+    <input type="text" id="premier" value="">
+    <label for="">Nombre 2</label>
+    <input type="text" id="deuxieme-nombre" value="">
+    <input type="button" name="" id="mon-bouton" value="Calcul" onclick="calcul()">
+  </form>
+
+  <h2>Somme</h2>
+
+  <div id="somme"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
